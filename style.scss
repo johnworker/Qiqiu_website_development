@@ -15,3 +15,68 @@ $big_desk: 1248px; //中型電腦尺寸
 $desk: 1024px; //小型電腦尺寸
 $tablets: 960px; //平板尺寸 (ipad)
 $mobile: 767px; //手機尺寸
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+
+    .logo img {
+        max-width: 150px;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        
+        li {
+            margin-left: 20px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            transition: color 0.3s;
+
+            &:hover {
+                color: #ff9800;
+            }
+        }
+    }
+}
+
+.hero {
+    height: 80vh;
+    background: url('path_to_background_image') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    margin-left: 10%;
+
+    h1 {
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        letter-spacing: 10px;
+    }
+
+    p {
+        font-size: 24px;
+        color: #fff;
+        letter-spacing: 5px;
+    }
+}
